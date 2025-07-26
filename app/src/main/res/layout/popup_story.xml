@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/mainbgcongrats"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:background="@drawable/popupbg"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/storyText"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome to OOPIFY ProGamer! In this section, you'll embark on an exciting journey through a variety of programs centered around the C# programming language. Here, you'll not only learn the core concepts of object-oriented programming (OOP) but also how to apply these principles to craft efficient, reusable, and maintainable code. Whether you're a beginner eager to grasp the basics or an experienced developer seeking to refine your skills, this guide offers a structured, step-by-step approach to elevate your C# expertise."
+            android:fontFamily="@font/alienenc"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/proceedStory"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/nextinstruction"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

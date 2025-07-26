@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainmenubg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/paladins"
+            android:text="OOPify "
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:fontFamily="@font/square"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:translationX="-20dp"
+            android:translationY="-30dp" />
+
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LAST NAME:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/lastNameUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FIRST NAME"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/firstNameUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PASSWORD:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/passwordEditTextUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="textPassword"
+                        android:drawableEnd="@drawable/viewpassword"
+                        android:paddingEnd="20dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="RE-ENTER PASSWORD:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/reEnterPasswordEditTextUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="textPassword"
+                        android:drawableEnd="@drawable/viewpassword"
+                        android:paddingEnd="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="EMAIL:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/emailUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/square"
+                        android:text="BIRTHDATE:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/datePickerUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:clickable="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MIDDLE NAME:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/middleNameUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SUFFIX:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/suffixUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PROGRAM:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/programUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SPECIALIZATION:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:id="@+id/specializationUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:textColor="#000000"
+                        android:paddingLeft="5dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/teko_light"
+                        android:inputType="text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="GENDER:"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/square"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupUpdate"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/radioMaleUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/square"
+                            android:buttonTint="#FFFFFF" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemaleUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/square"
+                            android:buttonTint="#FFFFFF" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="35dp"
+            android:background="@drawable/signupbar">
+            <TextView
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/square"
+                android:text="Update"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="MAKE SURE THAT THE INFORMATION GIVEN IS RELIABLE AND VALID"
+            android:textSize="10sp"
+            android:fontFamily="@font/square"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"/>
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="230dp"
+            android:background="@drawable/updaterobot"
+            android:translationX="670dp"
+            android:translationY="-170dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:translationX="470dp"
+            android:translationY="-567dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/toprightbar"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/cancelButtonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/square"
+                android:text="Cancel"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:translationX="600dp"
+            android:translationY="-600dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profileImageViewUpdate"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD PHOTO HERE"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:fontFamily="@font/paladins"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="-95dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

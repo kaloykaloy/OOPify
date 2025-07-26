@@ -1,0 +1,400 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgproceed_opacity"
+    android:alpha="0.9"
+    tools:context=".Level5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/borderproceed"
+        android:layout_margin="25dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/proceedrobot"
+        android:layout_gravity="bottom|start"
+        android:translationX="-90dp"
+        android:translationY="50dp">
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="250dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#4DFFFFFF">
+
+        <TextView
+            android:id="@+id/codeLevel7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:lineSpacingExtra="2dp"
+            android:scrollbars="vertical"
+            android:gravity="start|top"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:maxLines="20"
+            android:scrollHorizontally="true"
+            android:textIsSelectable="true"
+            android:text="_________\n\n
+public class BankAccount\n
+{\n
+    private decimal _balance;\n
+    public decimal Balance\n
+    {\n
+        get { return _balance; }\n
+    }\n
+    public BankAccount(decimal initialBalance)\n
+    {\n
+        if (initialBalance &gt;= 0)\n
+        {\n
+            _balance = initialBalance;\n
+        }\n
+        else\n
+        {\n
+            Console.WriteLine(&quot;Initial balance cannot be negative.&quot;);\n
+            _balance = 0;\n
+        }\n
+    }\n
+    _________\n
+    {\n
+        if (amount &gt; 0)\n
+        {\n
+            _balance += amount;\n
+            Console.WriteLine($&quot;Deposited: {amount:C}. New balance: {Balance:C}&quot;);\n
+        }\n
+        _________\n
+        {\n
+            Console.WriteLine(&quot;Deposit amount must be positive.&quot;);\n
+        }\n
+    }\n\n
+    public void Withdraw(decimal amount)\n
+    {\n
+        _________\n
+        {\n
+            _balance -= amount;\n
+            Console.WriteLine($&quot;Withdrew: {amount:C}. New balance: {Balance:C}&quot;);\n
+        }\n
+        else\n
+        {\n
+            Console.WriteLine(&quot;Invalid withdrawal amount or insufficient balance.&quot;);\n
+        }\n
+    }\n
+}\n\n
+public class Program\n
+{\n
+    _________________\n
+    {\n
+        BankAccount account = new BankAccount(1000m);\n
+        Console.WriteLine($&quot;Initial Balance: {account.Balance:C}&quot;);  // Output: Initial Balance: $1,000.00\n
+        account.Deposit(500m);  // Output: Deposited: $500.00. New balance: $1,500.00\n
+        account.Withdraw(200m);  // Output: Withdrew: $200.00. New balance: $1,300.00\n
+        account.Withdraw(1500m);  // Output: Invalid withdrawal amount or insufficient balance.\n
+    }\n
+}\n" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="270dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="#4DFFFFFF">
+
+        <LinearLayout
+            android:id="@+id/choices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice1Level7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="using System;"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice2Level7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="public static void Main()"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice3Level7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="if (amount &gt; 0 &amp;&amp; amount &lt;= _balance)"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice4Level7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="public void Deposit(decimal amount)"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice5Level7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="else"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/backLevel7"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_button"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+
+    <ImageButton
+        android:id="@+id/runLevel7"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/runimage"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/mainpointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/pointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="POINTS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="112dp"
+        android:layout_gravity="top|start">
+
+        <TextView
+            android:id="@+id/pointsValueLevel7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:gravity="center"
+            android:text="5,000"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/energybar"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="39dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/voltsimage"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="top|start">
+
+        <ImageButton
+            android:id="@+id/barStatusLevel7"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bar5"
+            android:elevation="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

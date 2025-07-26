@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/rankTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaceage"
+        android:text="Rank"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaceage"
+        android:text="Name"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaceage"
+        android:text="Points"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaceage"
+        android:text="Progress"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/accuracyTextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spaceage"
+        android:text="Accuracy"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+</LinearLayout>

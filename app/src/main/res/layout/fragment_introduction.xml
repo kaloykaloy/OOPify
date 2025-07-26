@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mainpointsbar"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pointsbar"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="POINTS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/totalPoints"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:gravity="center"
+            android:text="5,000"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!--Bar-->
+    <LinearLayout
+        android:layout_width="145dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/energylayout"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="150dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/energybg"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="150dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="ENERGY"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/fragmentBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:gravity="center"
+            android:background="@drawable/bar5"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!--End Bar-->
+
+    <LinearLayout
+        android:id="@+id/loginFragmentLayout"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/energylayout"
+        android:layout_gravity="top|end"
+        android:layout_marginRight="50dp">
+        <TextView
+            android:id="@+id/loginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="LOG IN"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/signupFragmentLayout"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mainpointsbar"
+        android:layout_gravity="top|end"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="130dp">
+
+        <TextView
+            android:id="@+id/signupFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="SIGN UP"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@drawable/line"
+        android:layout_marginTop="45dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attentionError"
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bgattention"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="550dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="attention"
+                android:fontFamily="@font/alienenc"
+                android:textSize="45sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="You cannot proceed with the following feature unless you log in."
+                android:fontFamily="@font/alienenc"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you want to "
+                    android:fontFamily="@font/square"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/loginPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOG IN"
+                    android:fontFamily="@font/square"
+                    android:textSize="15sp"
+                    android:textColor="#FB00FF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" OR "
+                    android:fontFamily="@font/square"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/signupPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN UP"
+                    android:fontFamily="@font/square"
+                    android:textSize="15sp"
+                    android:textColor="#FB00FF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ?"
+                    android:fontFamily="@font/square"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+    <LinearLayout
+        android:id="@+id/playNowButton"
+        android:layout_width="550dp"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/profilebg">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paladins"
+                android:gravity="center"
+                android:text="LEVEL UP! "
+                android:textColor="#FFFFFF"
+                android:textSize="35dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/star3"
+                android:layout_marginLeft="30dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/playNowIntro"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/playnowintro"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/levelImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/imagelevelintro"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/spinLayout"
+            android:layout_width="550dp"
+            android:layout_height="150dp"
+            android:background="@drawable/profilebg"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/spin_bg_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/spinbgintro"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/freespin_with_robot"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:background="@drawable/freespinwithrobot"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paladins"
+                android:gravity="end"
+                android:text=" SPIN! "
+                android:textColor="#FFFFFF"
+                android:textSize="35dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/paladins"
+                android:gravity="end"
+                android:text=" SPIN! "
+                android:textColor="#FFFFFF"
+                android:textSize="45dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paladins"
+                android:gravity="end"
+                android:text=" SPIN! "
+                android:textColor="#FFFFFF"
+                android:textSize="60dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="80dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

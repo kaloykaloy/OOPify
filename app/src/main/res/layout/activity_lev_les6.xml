@@ -1,0 +1,192 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgproceed_opacity"
+    android:alpha="0.9"
+    tools:context=".LevLes6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/borderproceed"
+        android:layout_margin="25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/proceedrobot"
+        android:layout_gravity="bottom|start"
+        android:translationX="-90dp"
+        android:translationY="50dp">
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/proceedButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nextinstruction"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+    <ImageButton
+        android:id="@+id/proceedBack"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_button"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/mainpointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/pointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="TIP"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="112dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/pointsValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:text="#6"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/energybar"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="39dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/voltsimage"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="top|start">
+
+        <ImageButton
+            android:id="@+id/barStatusInstruction"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bar5"
+            android:elevation="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/spotlightimage2"
+        android:layout_gravity="bottom|end"
+        android:translationX="-230dp"
+        android:translationY="-55dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:background="@drawable/spotlightimage"
+        android:layout_gravity="bottom|end"
+        android:translationX="-100dp"
+        android:translationY="-65dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="303dp"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:translationX="-205dp"
+        android:translationY="-80dp">
+
+        <TextView
+            android:id="@+id/instructionValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:gravity="center"
+            android:text="Inheritance in Object-Oriented Programming (OOP) in C# is a mechanism that allows one class to inherit properties and methods from another class. It establishes a parent-child relationship between classes, where the base class (or parent class) provides common functionality, and the derived class (or child class) extends or modifies this functionality."
+            android:textColor="#78D7FF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

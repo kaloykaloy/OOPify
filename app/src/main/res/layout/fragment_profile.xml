@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/square"
+        android:text="profile"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@drawable/line"
+        android:layout_marginTop="45dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/profilebg"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cidimage"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/userFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paladins"
+                android:text=" Cid "
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/userGender"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/maleicon"
+                android:translationX="115dp"
+                android:translationY="-40dp">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/editProfileButton"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/editprofile"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/userFullName"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/paladins"
+                android:text="Cid Kagenou"
+                android:layout_marginTop="40dp"
+                android:textSize="25sp"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/usertupID"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/square"
+                android:text="tupm-93-2012"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rectangleprofile"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="BIRTHDATE: "
+                        android:textSize="13sp"
+                        android:textColor="#FFFFFF" />
+                    <TextView
+                        android:id="@+id/birthdayData"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="september 31, 1967"
+                        android:textSize="13sp"
+                        android:textColor="#01A9FD" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="PROGRAM: "
+                        android:textSize="13sp"
+                        android:textColor="#FFFFFF" />
+                    <TextView
+                        android:id="@+id/programData"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="btvted"
+                        android:textSize="13sp"
+                        android:textColor="#FF00BF" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="MAJOR: "
+                        android:textSize="13sp"
+                        android:textColor="#FFFFFF" />
+                    <TextView
+                        android:id="@+id/majorData"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/square"
+                        android:text="computer shop"
+                        android:textSize="13sp"
+                        android:textColor="#01A9FD" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/paladins"
+                            android:text="POINTS"
+                            android:layout_gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="#01A9FD"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:id="@+id/userPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alienenc"
+                            android:text="5k+"
+                            android:layout_gravity="center"
+                            android:textSize="40sp"
+                            android:textColor="#FF00BF"
+                            android:layout_marginTop="15dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/paladins"
+                            android:text="ranking"
+                            android:layout_gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="#A302E2"
+                            android:layout_marginTop="15dp"/>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/rankingprofile"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/rankTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/square"
+                                android:text="2nd"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,385 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgproceed_opacity"
+    android:alpha="0.9"
+    tools:context=".Level5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/borderproceed"
+        android:layout_margin="25dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/proceedrobot"
+        android:layout_gravity="bottom|start"
+        android:translationX="-90dp"
+        android:translationY="50dp">
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="250dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#4DFFFFFF">
+
+        <TextView
+            android:id="@+id/codeLevel9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:lineSpacingExtra="2dp"
+            android:scrollbars="vertical"
+            android:gravity="start|top"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:maxLines="20"
+            android:scrollHorizontally="true"
+            android:textIsSelectable="true"
+            android:text="using System;\n
+public class Student\n
+{\n
+   _________\n
+    public _________ Grade\n
+    {\n
+        get { return _grade; }\n
+        set\n
+        {\n
+            if (value &gt;= 0 &amp;&amp; value &lt;= 100)\n
+            {\n
+                _grade = value;\n
+            }\n
+            else\n
+            {\n
+                Console.WriteLine(&quot;Invalid grade. Grade must be between 0 and 100.&quot;);\n
+            }\n
+        }\n
+    }\n\n
+    public Student(int grade)\n
+    {\n
+        Grade = grade; // Use the property to set the initial grade\n
+    }\n\n
+    _________\n
+    {\n
+        Console.WriteLine($&quot;The student's grade is: {Grade}&quot;);\n
+    }\n
+}\n\n
+public class Program\n
+{\n
+    _________\n
+    {\n
+        Student student = new Student(85);\n
+        student.DisplayGrade();  // Output: The student's grade is: 85\n\n
+        student.Grade = 92;\n
+        _________  \n\n
+        student.Grade = 150;  // Output: Invalid grade. Grade must be between 0 and 100.\n
+        student.DisplayGrade();  // Output: The student's grade is: 92\n
+    }\n
+}\n" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="270dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="#4DFFFFFF">
+
+        <LinearLayout
+            android:id="@+id/choices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice1Level9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="student.DisplayGrade();"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/choice2Level9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="public static void Main()"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice3Level9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="int"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice4Level9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="private int _grade;"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_corner1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/choice5Level9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="public void DisplayGrade()"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/backLevel9"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_button"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+
+    <ImageButton
+        android:id="@+id/runLevel9"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/runimage"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/mainpointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/pointsbar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="top|start">
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/square"
+            android:text="POINTS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="112dp"
+        android:layout_gravity="top|start">
+
+        <TextView
+            android:id="@+id/pointsValueLevel9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/alienenc"
+            android:gravity="center"
+            android:text="5,000"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/energybar"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="39dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/voltsimage"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="top|start">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="top|start">
+
+        <ImageButton
+            android:id="@+id/barStatusLevel9"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bar5"
+            android:elevation="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgproceed_opacity"
+    android:alpha="0.9"
+    tools:context=".LevProb4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/borderproceed"
+        android:layout_margin="25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/alienenc"
+                android:text="QUEST NO. 4"
+                android:textColor="#78D7FF"
+                android:textSize="60dp"
+                android:gravity="center"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="70dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/welcomeLongText"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alienenc"
+                android:text="Create a system to handle different shapes (e.g., circles and rectangles). Use polymorphism to allow a single method to handle the drawing of various shapes, regardless of their specific types."
+                android:textColor="#78D7FF"
+                android:textSize="17sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skipNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/skipButton"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_button"
+                android:elevation="10dp"
+                android:layout_marginRight="200dp"/>
+
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nextinstruction"
+                android:elevation="10dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/okButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/okwelcome"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</FrameLayout>

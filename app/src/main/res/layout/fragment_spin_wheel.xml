@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/square"
+        android:text="FREE SPIN"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@drawable/line"
+        android:layout_marginTop="45dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/spinwheelbg"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paladins"
+                android:text=" SPIN "
+                android:textSize="45sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/square"
+                android:text="SPIN THE WHEEL"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:paddingRight="45dp"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:gravity="bottom">
+                <TextView
+                    android:id="@+id/resultTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/square"
+                    android:text="Click the Wheel!"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/wheelImageView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/spinwheelupdated" />
+
+                <ImageView
+                    android:id="@+id/pointerImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="141dp"
+                    android:src="@drawable/pointerimage"
+                    android:layout_marginLeft="230dp"
+                    android:elevation="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </FrameLayout>

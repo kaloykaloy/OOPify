@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/mainbgcongrats"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="280dp"
+        android:background="@drawable/popupbg"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations, hero of OOPify!"
+            android:fontFamily="@font/alienenc"
+            android:textSize="28sp"
+            android:textColor="#78D7FF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/congratsText"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="You have successfully completed all the levels and restored the once-fallen metropolis to its former glory. Through your mastery of C# and object-oriented programming, you’ve proven your coding skills and rebuilt the city piece by piece. Your dedication, problem-solving abilities, and understanding of OOP principles have not only saved OOPify but also made you a true coding champion."
+            android:fontFamily="@font/alienenc"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/proceedCongrats"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/nextinstruction"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

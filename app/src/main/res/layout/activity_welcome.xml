@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomescreenbg"
+    android:alpha="0.9"
+    tools:context=".Instructions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/alienenc"
+                android:text="WELCOME TO OOPIFY"
+                android:textColor="#78D7FF"
+                android:textSize="60dp"
+                android:gravity="center"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="70dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/welcomeLongText"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alienenc"
+                android:text="the once-thriving marvel of the future now engulfed in chaos and darkness. Under the shadow of the nefarious virus known as The Void, this once-sparkling metropolis has fallen into disarray, with its systems in tatters and its neon lights flickering out. As a skilled gamer, you’re about to embark on an epic quest where your mission is critical: the salvation of Cyber City hinges on collecting vital points scattered throughout the city’s devastated landscape. Each point you gather will restore crucial functions, unlock new areas, and ultimately help you combat the chaos brought by The Void. \n\n The future of OOPFY depends on your ability to reclaim its lost glory—are you ready to be its last hope?"
+                android:textColor="#78D7FF"
+                android:textSize="17sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skipNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/skipButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/skipwelcome"
+            android:elevation="10dp"
+            android:layout_marginRight="200dp"/>
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nextinstruction"
+            android:elevation="10dp" />
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/okButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/okwelcome"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</FrameLayout>
